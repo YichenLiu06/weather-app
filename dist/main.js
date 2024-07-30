@@ -1,1 +1,1 @@
-console.log("hello world");
+(()=>{"use strict";new Promise((function(e,n){fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Calgary?unitGroup=metric&key=66YZUMG2MZXUJZPLALPQ4KAEQ&contentType=json").then((e=>e.json())).then((n=>{console.log(n),e({feelslike:n.currentConditions.feelslike,cloudcover:n.currentConditions.cloudcover,temp:n.currentConditions.temp,humidity:n.currentConditions.humidity,conditions:n.currentConditions.conditions,precip:n.currentConditions.precip})})).catch((e=>{n(e)}))})).then((e=>{console.log(e)}))})();
